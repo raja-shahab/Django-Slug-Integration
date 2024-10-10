@@ -32,8 +32,6 @@ This project demonstrates how to implement **slugs** in Django URLs for individu
 
 Here's an example of how slugs are generated in this project:
 
-\`\`\`
-
     from django.db import models
     from django.utils.text import slugify
     
@@ -46,7 +44,6 @@ Here's an example of how slugs are generated in this project:
         if not self.slug:
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
-\`\`\`
 
 ## License
 
